@@ -41,3 +41,25 @@ const validateForm = () => {
     else alert('nombre o contraseña incorrecto')
 }
 
+
+
+//DATOS SUGAR SINTAX
+const personas = [];
+
+document.getElementById("username").value = localStorage.getItem("nombre");
+
+
+let i = 1;
+const nombre = document.getElementById("username");
+
+const nombreHtml = localStorage.getItem("nombre");
+
+const guardarlocal = () => {
+    localStorage.setItem("nombre", document.getElementById("nombre").value );
+    
+    for(i = 1; i < 2; i++){
+        if(nombreHtml+apellidoHtml? console.log(localStorage.getItem("nombre")) : console.log("no puedo guardar su nombre"));
+}
+    
+}
+nombre.addEventListener(`click`, guardarlocal)
