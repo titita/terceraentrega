@@ -35,30 +35,19 @@ function add(producNew){
     carrito.push(producNew);
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    
-   // alert("Agregaste: "+producNew.nombre+" al carrito!");
+    sweet()
  
 }
-
-/*const sweet= document.querySelector(`btn${producto.nombre}`);
-
-swal.fire ({
-    title: 'Producto Agregado!',
-    icon:'succes',
-    confimrButtonText:':)'
-
-})*/
 
 const sweet = () => {
     Swal.fire({
         title: 'Producto Agregado!',
         icon:'succes',
-        confimrButtonText:':)'
+      
+  
+       
     })
 }
-
-document.getElementById(`btn${producto.nombre}`).addEventListener('click',sweet)
-
 
 
 //BORRAR CARRITO
