@@ -17,3 +17,9 @@ carrito.forEach(element => {
 totalCarrito = carrito.reduce ((acumulador,producto)=> acumulador + producto.precio,0);
 let infoTotal = document.getElementById("total");
 infoTotal.innerText="Total a pagar $:"+totalCarrito;
+
+function eliminarCarrito(){
+    localStorage.setItem("totalCarrito",null);
+    localStorage.setItem('total',"0");
+    $(".total").html('');
+}

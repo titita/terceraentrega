@@ -52,9 +52,6 @@ const sweet = () => {
 
 //BORRAR CARRITO
 
-
-function eliminarCarrito(){
-    localStorage.setItem("carrito",null);
-    localStorage.setItem('totalCarrito',"0");
-    $(".").html('');
-}
+$(".btnLimpiar").on("click", () => {
+    eliminarCarrito();
+})
